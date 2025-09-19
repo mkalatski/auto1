@@ -11,8 +11,8 @@ feature 'example' do
   scenario 'sitelogin' do
     visit 'https://forum.awd.ru'
     find_all(:link, 'Вход').first.click
-    fill_in 'username', with: 'silent_stn'
-    fill_in 'password', with: 'asdfcvbn'
+    fill_in 'username', with: '123456'
+    fill_in 'password', with: '*******'
     check 'autologin'
     check 'viewonline'
     click_button 'Вход'
